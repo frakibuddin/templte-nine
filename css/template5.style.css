@@ -1,0 +1,214 @@
+/*
+tamplates 5 css 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f6f3ee;
+  overflow: hidden;
+}
+header {
+  text-align: center;
+  background: #c0b6e8;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.585), 0px 1px 5px rgba(0, 0, 0, 0.585);
+  padding-bottom: 20px;
+}
+header h1 {
+  color: #212121;
+}
+.logo {
+  width: 120px;
+}
+/* main */
+.content-inner {
+  background: #0000006c;
+  width: 80%;
+  margin: 65px auto;
+  padding: 25px;
+  border-radius: 10px;
+  padding-left: 100px;
+  position: relative;
+  transform: translateX(-20px);
+}
+.content-wrapper {
+  padding: 10px 0;
+  width: 90%;
+  margin: auto;
+}
+.box {
+  max-width: 400px;
+  margin: 20px;
+  margin-top: -120px;
+  /* margin-left: auto; */
+  position: relative;
+}
+.content-wrapper:first-child {
+  margin-top: 180px;
+}
+.box-header {
+  padding: 15px;
+  background: var(--c);
+  text-align: center;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.585), 0px 1px 5px rgba(0, 0, 0, 0.585);
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  z-index: 99;
+}
+.box-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid #555;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.585));
+}
+.box-header::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid #555;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.585));
+}
+.line {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 3px;
+  background: #d0c8c5;
+  z-index: 1;
+}
+.box:first-child .line {
+  left: 0%;
+}
+
+.box-footer {
+  width: 95%;
+  margin: 4px auto;
+  background: var(--fc);
+  padding: 0 15px 25px 15px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.585),
+    1px 5px 5px rgba(0, 0, 0, 0.585);
+  position: relative;
+  z-index: 99;
+}
+.box-footer .num {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--c);
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.585);
+}
+.box-footer .num::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 30px;
+  height: 15px;
+  background: var(--c);
+  border-radius: 5px;
+}
+.box-footer h2 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+.box-footer p {
+  font-size: 19px;
+}
+.box-header img {
+  width: 70px;
+}
+.content-wrapper .box:nth-child(even) {
+  margin-left: auto;
+}
+/* footer */
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2%;
+  padding: 30px 25px;
+  background: #c0b6e8;
+  border-radius: 100px;
+  border: 5px solid #fff;
+  margin: 30px 0;
+}
+.footer-top img {
+  width: 70px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.text-black {
+  color: #000000 !important;
+}
+.desc {
+  font-size: 22px;
+  color: gray;
+  line-height: 125%;
+}
+
+.footer-bottom {
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+  background: #0b0b0b;
+}
+.footer-bottom .footer-logo {
+  width: 150px;
+}
+
+@media (max-width: 950px) {
+  .content-wrapper .box:nth-child(even) {
+    margin-left: initial;
+    margin: 20px auto;
+  }
+  .box {
+    max-width: 600px;
+    margin-top: 0;
+    margin: 20px auto;
+  }
+  .content-wrapper:first-child {
+    margin-top: 80px;
+  }
+}

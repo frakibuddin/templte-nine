@@ -1,0 +1,119 @@
+/*
+tamplates 7 css 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #F1F1F1;
+}
+header {
+  text-align: center;
+  padding-bottom: 30px;
+  position: relative;
+  background: #b5c5d5;
+}
+
+header h1 {
+  color: #000000;
+}
+.logo {
+  width: 120px;
+}
+
+/* main */
+main {
+  padding: 60px 50px;
+}
+.box{
+	display:flex;
+	gap:20px;
+	margin-bottom:25px;
+}
+.content{
+	background:var(--bg);
+	padding:10px 25px;
+	border-radius:0 150px 150px 0;
+	display:flex;
+	gap:20px;
+	align-items:center;
+	position:relative;
+}
+.content::after{
+	content: "";
+    position: absolute;
+    left: -41px;
+    top: 30px;
+    width: 7px;
+    height: 97%;
+    background: var(--bg);
+}
+.box:last-child .content::after{
+	height: 75%;
+}
+.left-part{
+	width:35px;
+	height:35px;
+	border-radius:7px;
+	border:8px solid var(--bg);
+	flex-shrink:0;
+}
+.text h2{
+	margin-bottom:10px
+}
+.icon img{
+	width:90px;
+}
+/* footer */
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2%;
+  padding: 30px 25px;
+  background: #b5c5d5;
+  margin-top: 50px;
+  border-bottom: 2px solid #272727;
+}
+.footer-top img {
+  width: 70px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.text-white {
+  color: #323f3a !important;
+}
+.desc {
+  font-size: 22px;
+  color: gray;
+  line-height: 125%;
+}
+
+.footer-bottom {
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+  background: #272727;
+}
+.footer-bottom .footer-logo {
+  width: 150px;
+}

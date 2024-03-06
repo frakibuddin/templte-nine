@@ -1,0 +1,130 @@
+/*
+tamplates 2 css 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  background: #f5d6c4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 25px;
+  gap: 5px;
+}
+header img {
+  width: 130px;
+}
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e54d0c;
+}
+main {
+  padding: 25px 35px;
+  background: #403533;
+}
+.contant-wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+  padding-bottom: 30px;
+}
+.number {
+  font-size: 40px;
+  font-weight: 800;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: #f5d6c4;
+  border: 5px solid #e54d0c;
+  border-radius: 50%;
+  color: #3e3234;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.content .qus {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f5d6c4;
+}
+.content {
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  bottom: -75px;
+  left: -70px;
+  width: 2px;
+  height: 100%;
+  background: #e54d0c;
+}
+.content .ans {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* footer */
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2%;
+  padding: 30px 25px;
+  border-top: 2px solid #181818;
+  background: #f5d6c4;
+  color: #000000;
+}
+.footer-top img {
+  width: 70px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.text-white {
+  color: #000000 !important;
+}
+.desc {
+  font-size: 22px;
+  color: gray;
+  line-height: 125%;
+}
+
+.footer-bottom {
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+  background: #0b0b0b;
+}
+.footer-bottom .footer-logo {
+  width: 150px;
+}

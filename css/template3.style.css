@@ -1,0 +1,120 @@
+/*
+tamplates 3 css 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #bdcbd4;
+}
+header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.logo {
+  width: 150px;
+}
+.box {
+  width: 85%;
+  margin: 20px auto;
+}
+.box .inner-box {
+  position: relative;
+  margin-bottom: 50px;
+}
+.number {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.bottom-box {
+  position: absolute;
+  background: #5ce4dc;
+  border-radius: 25px;
+  width: 95%;
+  left: 0;
+  top: 20px;
+  right: -30px;
+  height: 100%;
+  z-index: 1;
+  box-shadow: 1px 3px 12px 0px rgb(0 0 0 / 22%);
+}
+.outer-box {
+  padding: 20px 30px;
+  width: 85%;
+  margin-left: auto;
+  background: #fff;
+  position: relative;
+  z-index: 99;
+  border-radius: 25px;
+  box-shadow: 1px 3px 12px 0px rgb(0 0 0 / 22%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* border-radius: 0 20px 20px 0; */
+}
+.outer-box h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.outer-box .icon img {
+  width: 90px;
+}
+
+/* footer */
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2%;
+  padding: 30px 25px;
+  border-top: 2px solid #181818;
+  background: #292829;
+}
+.footer-top img {
+  width: 70px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.text-white {
+  color: #fff !important;
+}
+.desc {
+  font-size: 22px;
+  color: gray;
+  line-height: 125%;
+}
+
+.footer-bottom {
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+  background: #0b0b0b;
+}
+.footer-bottom .footer-logo {
+  width: 150px;
+}
