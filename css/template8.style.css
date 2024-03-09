@@ -43,7 +43,7 @@ main {
 .content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
   margin-top: -14px;
 }
 .inner-icon img {
@@ -54,7 +54,7 @@ main {
   margin-left: 104px;
 }
 .content:nth-child(even) {
-  gap: 70px;
+  gap: 115px;
 }
 .shape {
   position: relative;
@@ -108,11 +108,11 @@ main {
 .desc h2 {
   color: #fff;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .desc p {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 /* footer */
 .footer-top {

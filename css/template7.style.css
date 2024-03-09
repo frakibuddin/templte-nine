@@ -18,7 +18,15 @@ header {
   text-align: center;
   background: url(../img/shape.png);
   background-size: 100% 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
   padding-bottom: 70px;
+}
+header .heding h1 {
+  color: #4e635c;
 }
 .logo {
   width: 150px;
